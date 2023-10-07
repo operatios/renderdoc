@@ -70,6 +70,19 @@
               Value='[#qrenderdocEXE]'
               Type="expandable" />
 
+            <RegistryValue Root="HKLM" Id="VerbRDI" Action="write"
+              Key="Software\Classes\RenderDoc.RDCImage.1\shell\open\command"
+              Value='"[#qrenderdocEXE]" "%1"'
+              Type="expandable" />
+            <RegistryValue Root="HKLM" Id="VerbDescRDI" Action="write"
+              Key="Software\Classes\RenderDoc.RDCImage.1"
+              Value=''
+              Type="expandable" />
+            <RegistryValue Root="HKLM" Id="VerbIconRDI" Action="write"
+              Key="Software\Classes\RenderDoc.RDCImage.1\DefaultIcon"
+              Value='[#qrenderdocEXE]'
+              Type="expandable" />
+
           </Component>
 
           <Component Id='RenderDocCPP' Win64="yes" Guid='9D5949F9-0447-47B6-829D-77465E1FDAD9'>
@@ -288,29 +301,29 @@
           Key="Software\Classes\Applications\qrenderdoc.exe\SupportedTypes"
           Name='.psd'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidDDS" Action="write"
-          Key="Software\Classes\.dds\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.dds\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidHDR" Action="write"
-          Key="Software\Classes\.hdr\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.hdr\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidJPG" Action="write"
-          Key="Software\Classes\.jpg\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.jpg\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidJPEG" Action="write"
-          Key="Software\Classes\.jpeg\OpenWithProgids" Name='RenderDoc.RDCCapture.1' Value='' Type="string" />
+          Key="Software\Classes\.jpeg\OpenWithProgids" Name='RenderDoc.RDCImage.1' Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidPNG" Action="write"
-          Key="Software\Classes\.png\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.png\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidEXR" Action="write"
-          Key="Software\Classes\.exr\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.exr\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidTGA" Action="write"
-          Key="Software\Classes\.tga\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.tga\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidBMP" Action="write"
-          Key="Software\Classes\.bmp\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.bmp\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidGIF" Action="write"
-          Key="Software\Classes\.gif\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.gif\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
         <RegistryValue Root="HKLM" Id="RDCOpenWithProgidPSD" Action="write"
-          Key="Software\Classes\.psd\OpenWithProgids" Name='RenderDoc.RDCCapture.1'  Value='' Type="string" />
+          Key="Software\Classes\.psd\OpenWithProgids" Name='RenderDoc.RDCImage.1'  Value='' Type="string" />
       </Component>
       <Component Id="ImageThumbnailProvider" Guid="E79B67C0-1128-4471-80C5-6233EF37414C">
         <RegistryValue Root="HKLM" Id="RDCProvider" Action="write" KeyPath='yes'
-          Key="Software\Classes\RenderDoc.RDCCapture.1\ShellEx\{e357fccd-a995-4576-b01f-234630154e96}"
+          Key="Software\Classes\RenderDoc.RDCImage.1\ShellEx\{e357fccd-a995-4576-b01f-234630154e96}"
           Value='{5D6BF029-A6BA-417A-8523-120492B1DCE3}'
           Type="expandable" />
       </Component>
